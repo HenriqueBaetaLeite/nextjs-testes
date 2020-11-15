@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../pages/style.css';
 
 const Home = () => {
   return (
@@ -16,9 +17,11 @@ const Contador = () => {
   const delOne = () => setCount(count - 1);
   return (
     <div>
-      <span>{count}</span>
-      <button onClick={plusOne}>Adicionar</button>
-      <button onClick={delOne}>Remover</button>
+      <h2>{count}</h2>
+      <div>
+        <button onClick={plusOne}>Adicionar</button>
+        <button onClick={delOne}>Remover</button>
+      </div>
     </div>
   );
 };
